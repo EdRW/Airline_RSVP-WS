@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Airline_RSVP-WS:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="airline_rsvp-ws-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Airline_RSVP-WS:war exploded" />
+    </root>
+  </artifact>
+</component>
