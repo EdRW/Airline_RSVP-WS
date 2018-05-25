@@ -11,6 +11,7 @@ import java.net.URISyntaxException;
 import javax.ws.rs.GET;
 import javax.ws.rs.Produces;
 import javax.ws.rs.Path;
+import javax.ws.rs.core.Response;
 
 // The Java class will be hosted at the URI path "/helloworld"
 @Path("/flight")
@@ -24,10 +25,16 @@ public class FlightCatalogService {
         return "Hello World from Flight Catalog Service!";
     }
 
+    @GET
+    @Path("/ping")
+    public  Response ping(){
+        return Response.ok().entity("Flight Catalog Service online").build();
+    }
+
     public static void main(String[] args) throws IOException, URISyntaxException {
         ResourceConfig conf = new ResourceConfig(FlightCatalogService.class);
         HttpServer server = JdkHttpServerFactory.createHttpServer( new URI("http://localhost:9999/"), conf);
-        //server.start();
+
 
         System.out.println("Server running");
         System.out.println("Visit: http://localhost:9999/flight");
