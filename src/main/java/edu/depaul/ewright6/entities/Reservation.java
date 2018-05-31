@@ -4,13 +4,13 @@ public class Reservation {
     private Integer id;
     private Integer customerId;
     private Integer flightId;
-    private Object otherStuff;
+    private String otherStuff;
 
     public Reservation() {
 
     }
 
-    public Reservation(Integer id, Integer customerId, Integer flightId, Object otherStuff) {
+    public Reservation(Integer id, Integer customerId, Integer flightId, String otherStuff) {
         this.id = id;
         this.customerId = customerId;
         this.flightId = flightId;
@@ -41,11 +41,11 @@ public class Reservation {
         this.flightId = flightId;
     }
 
-    public Object getOtherStuff() {
+    public String getOtherStuff() {
         return otherStuff;
     }
 
-    public void setOtherStuff(Object otherStuff) {
+    public void setOtherStuff(String otherStuff) {
         this.otherStuff = otherStuff;
     }
 

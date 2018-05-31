@@ -103,7 +103,7 @@ public class CustomerService {
 
     public static void main(String[] args) throws IOException, URISyntaxException {
         ResourceConfig conf = new ResourceConfig(CustomerService.class);
-        HttpServer server = JdkHttpServerFactory.createHttpServer( new URI("http://localhost:9998/"), conf); //HttpServerFactory.create("http://localhost:9998/");
+        HttpServer server = JdkHttpServerFactory.createHttpServer( new URI("http://localhost:9998/"), conf);
 
         System.out.println("Server running");
         System.out.println("Visit: http://localhost:9998/customers");

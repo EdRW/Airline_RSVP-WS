@@ -6,12 +6,12 @@ public class Flight {
     private String origin;
     private String destination;
     private String dateTime;
-    private Object otherStuff;
+    private String otherStuff;
 
     public Flight() {
     }
 
-    public Flight(Integer id, String flightNumber, String origin, String destination, String dateTime, Object otherStuff) {
+    public Flight(Integer id, String flightNumber, String origin, String destination, String dateTime, String otherStuff) {
         this.id = id;
         this.flightNumber = flightNumber;
         this.origin = origin;
@@ -60,11 +60,11 @@ public class Flight {
         this.dateTime = dateTime;
     }
 
-    public Object getOtherStuff() {
+    public String getOtherStuff() {
         return otherStuff;
     }
 
-    public void setOtherStuff(Object otherStuff) {
+    public void setOtherStuff(String otherStuff) {
         this.otherStuff = otherStuff;
     }
 
